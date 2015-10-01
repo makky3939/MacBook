@@ -1,0 +1,32 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  sudo: no
+  vars:
+    homebrew_taps:
+      - homebrew/binary
+      - homebrew/dupes
+      - caskroom/cask
+      - railwaycat/emacsmacport
+    homebrew_packages:
+      - { name: git }
+      - { name: zsh }
+      - { name: zsh-completions }
+    homebrew_cask_packages:
+      - { name: iterm2 }
+      - { name: firefox }
+      - { name: google-chrome }
+      - { name: java }
+      - { name: skype }
+      - { name: slack }
+      - { name: sourcetree }
+      - { name: flux }
+      - { name: atom }
+      - { name: virtualbox }
+
+  tasks:
+    - include: tasks/zsh.yml
+
+  handlers:
+    - name: run fc-cache
+      shell: fc-cache -vf

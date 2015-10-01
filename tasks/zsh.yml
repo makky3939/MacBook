@@ -1,0 +1,25 @@
+- name: check etc/shells
+  shell: |
+    cat /etc/shells | grep -p '\/usr\/local\/bin\/zsh'
+  register: result
+  ignore_errors: True
+
+- name: add zsh to etc/shells
+  shell: echo '/usr/local/bin/zsh' >> /etc/shells
+  sudo: yes
+  when: result|failed
+
+- name: change shell
+  shell: chsh -s /usr/local/bin/zsh
+
+
+# clone dotfiles repository
+- name: ~/Projects/dotfiles
+  shell: |
+    ls ~/Projects | grep -p 'dotfiles'
+  register: result
+  ignore_errors: True
+
+- name: clone dotfiles
+  shell: git clone https://github.com/makky3939/dotfiles.git ~/Projects/dotfiles
+  when: result|failed
