@@ -23,3 +23,19 @@
 - name: clone dotfiles
   shell: git clone https://github.com/makky3939/dotfiles.git ~/Projects/dotfiles
   when: result|failed
+
+- name: create symlinks emacs.d
+  action: file src=~/Projects/dotfiles/_emacs.d/init.el dest=~/.emacs.d/init.el state=link force=true
+- name: create symlinks gitconfig
+  action: file src=~/Projects/dotfiles/_gitconfig dest=~/.gitconfig state=link force=true
+- name: create symlinks gitignore_global
+  action: file src=~/Projects/dotfiles/_gitignore_global dest=~/.gitignore_global state=link force=true
+- name: create symlinks tmux
+  action: file src=~/Projects/dotfiles/_tmux dest=~/.tmux state=link force=true
+- name: create symlinks zprofile
+  action: file src=~/Projects/dotfiles/_zprofile dest=~/.zprofile state=link force=true
+- name: create symlinks zshrc
+  action: file src=~/Projects/dotfiles/_zshrc dest=~/.zshrc state=link force=true
+
+- name: reload zshrc
+  shell: source ~/.zshrc

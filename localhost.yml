@@ -10,6 +10,7 @@
       - railwaycat/emacsmacport
     homebrew_packages:
       - { name: git }
+      - { name: emacs }
       - { name: zsh }
       - { name: zsh-completions }
     homebrew_cask_packages:
@@ -25,6 +26,9 @@
       - { name: virtualbox }
 
   tasks:
+    - include: tasks/brew_tap.yml
+    - include: tasks/brew_install.yml
+    - include: tasks/brew_cask_install.yml
     - include: tasks/zsh.yml
 
   handlers:
