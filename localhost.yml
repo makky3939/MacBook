@@ -24,6 +24,14 @@
       - { name: flux }
       - { name: atom }
       - { name: virtualbox }
+      - { name: dropbox }
+      - { name: google-japanese-ime }
+      - { name: adobe-creative-cloud }
+      - { name: adobe-illustrator-cc }
+      - { name: adobe-photoshop-cc }
+      - { name: adobe-photoshop-lightroom }
+      - { name: adobe-reader }
+      - { name: evernote }
 
   tasks:
     - include: tasks/brew_tap.yml
