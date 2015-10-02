@@ -25,7 +25,7 @@
   when: result|failed
 
 - name: create symlinks emacs.d
-  action: file src=~/Projects/dotfiles/_emacs.d/init.el dest=~/.emacs.d/init.el state=link force=true
+  action: file src=~/Projects/dotfiles/_emacs.d dest=~/.emacs.d state=link force=true
 - name: create symlinks gitconfig
   action: file src=~/Projects/dotfiles/_gitconfig dest=~/.gitconfig state=link force=true
 - name: create symlinks gitignore_global
@@ -36,3 +36,6 @@
   action: file src=~/Projects/dotfiles/_zprofile dest=~/.zprofile state=link force=true
 - name: create symlinks zshrc
   action: file src=~/Projects/dotfiles/_zshrc dest=~/.zshrc state=link force=true
+
+- name: create symlinks atom
+  action: file src=~/Projects/dotfiles/_atom dest=~/.atom state=link force=true
