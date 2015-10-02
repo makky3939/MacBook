@@ -36,6 +36,3 @@
   action: file src=~/Projects/dotfiles/_zprofile dest=~/.zprofile state=link force=true
 - name: create symlinks zshrc
   action: file src=~/Projects/dotfiles/_zshrc dest=~/.zshrc state=link force=true
-
-- name: reload zshrc
-  shell: source ~/.zshrc
