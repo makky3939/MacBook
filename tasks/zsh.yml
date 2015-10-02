@@ -31,7 +31,7 @@
 - name: create symlinks gitignore_global
   action: file src=~/Projects/dotfiles/_gitignore_global dest=~/.gitignore_global state=link force=true
 - name: create symlinks tmux
-  action: file src=~/Projects/dotfiles/_tmux dest=~/.tmux state=link force=true
+  action: file src=~/Projects/dotfiles/_tmux.conf dest=~/.tmux.conf state=link force=true
 - name: create symlinks zprofile
   action: file src=~/Projects/dotfiles/_zprofile dest=~/.zprofile state=link force=true
 - name: create symlinks zshrc

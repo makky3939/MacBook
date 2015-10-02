@@ -11,6 +11,7 @@
     homebrew_packages:
       - { name: git }
       - { name: emacs }
+      - { name: tmux }
       - { name: zsh }
       - { name: zsh-completions }
     homebrew_cask_packages:
