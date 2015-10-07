@@ -14,6 +14,9 @@
       - { name: tmux }
       - { name: zsh }
       - { name: zsh-completions }
+      - { name: rbenv }
+      - { name: ruby-build }
+      - { name: node }
     homebrew_cask_packages:
       - { name: iterm2 }
       - { name: firefox }
@@ -33,6 +36,7 @@
       - { name: adobe-photoshop-lightroom }
       - { name: adobe-reader }
       - { name: evernote }
+      - { name: mamp }
 
   tasks:
     - include: tasks/brew_tap.yml
