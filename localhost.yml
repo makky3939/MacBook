@@ -17,6 +17,7 @@
       - { name: rbenv }
       - { name: ruby-build }
       - { name: node }
+      - { name: tree }
     homebrew_cask_packages:
       - { name: iterm2 }
       - { name: firefox }
