@@ -18,6 +18,7 @@
       - { name: ruby-build }
       - { name: node }
       - { name: tree }
+      - { name: scala }
     homebrew_cask_packages:
       - { name: iterm2 }
       - { name: firefox }
@@ -38,6 +39,7 @@
       - { name: adobe-reader }
       - { name: evernote }
       - { name: mamp }
+      - { name: octave }
 
   tasks:
     - include: tasks/brew_tap.yml
