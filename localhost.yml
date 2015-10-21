@@ -19,6 +19,7 @@
       - { name: node }
       - { name: tree }
       - { name: scala }
+      - { name: sbt }
     homebrew_cask_packages:
       - { name: iterm2 }
       - { name: firefox }
