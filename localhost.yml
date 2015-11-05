@@ -20,6 +20,7 @@
       - { name: tree }
       - { name: scala }
       - { name: sbt }
+      - { name: nkf }
     homebrew_cask_packages:
       - { name: iterm2 }
       - { name: firefox }
