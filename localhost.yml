@@ -17,6 +17,7 @@
       - { name: rbenv }
       - { name: ruby-build }
       - { name: node }
+      - { name: nvm }
       - { name: tree }
       - { name: scala }
       - { name: sbt }
