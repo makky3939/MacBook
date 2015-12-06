@@ -22,6 +22,7 @@
       - { name: scala }
       - { name: sbt }
       - { name: nkf }
+      - { name: mysql }
     homebrew_cask_packages:
       - { name: iterm2 }
       - { name: firefox }
