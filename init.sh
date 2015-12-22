@@ -10,6 +10,7 @@ brew doctor
 brew update
 
 brew install python
+
 brew install ansible
 
 brew install git
