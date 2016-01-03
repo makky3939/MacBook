@@ -23,6 +23,8 @@
       - { name: sbt }
       - { name: nkf }
       - { name: mysql }
+      - { name: ghostscript }
+      - { name: imagemagick }
     homebrew_cask_packages:
       - { name: iterm2 }
       - { name: firefox }
@@ -36,7 +38,6 @@
       - { name: virtualbox }
       - { name: dropbox }
       - { name: google-japanese-ime }
-      - { name: adobe-creative-cloud }
       - { name: evernote }
       - { name: mamp }
       - { name: octave }
