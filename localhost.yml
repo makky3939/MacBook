@@ -25,6 +25,7 @@
       - { name: mysql }
       - { name: ghostscript }
       - { name: imagemagick }
+      - { name: pyenv }
     homebrew_cask_packages:
       - { name: iterm2 }
       - { name: firefox }
